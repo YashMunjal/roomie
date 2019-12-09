@@ -75,8 +75,9 @@ body{
 }
 
 .font-head {
-    font-weight: 450;
-    font-size: 5em;
+    font-weight: 550;
+    font-size: 4.5em;
+    margin-top:10px;
     background: rgba(200, 200, 200, 0.1);
 }
 
