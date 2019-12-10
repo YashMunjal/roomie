@@ -115,14 +115,12 @@ h1.background:before {
 }
 
 .section-two>h1 {
-    background: #93291E;
     margin-top: 30px;
     text-align: center;
 
 }
 
 h1.background span {
-    background: #93291E;
     padding: 0 15px;
     font-size: 55px;
 
