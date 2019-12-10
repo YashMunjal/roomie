@@ -77,12 +77,14 @@
     margin-top:10px;
     background: rgba(200, 200, 200, 0.1);
 }
-@media(max-width)
+@media(max-width:)
 {
-    .flat-head
+    .font-head
      {
       font-size:3em;
       font-weight:500;
+      line-height:0.8;
+      
 }
 }
 
