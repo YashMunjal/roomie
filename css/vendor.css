@@ -8,9 +8,6 @@
 * {
     font-family: 'Amiri', serif;
 }
-body{
-    background-color:#93291E;
-}
 .navbar {
     font-size: 22px;
     font-weight: 150;
@@ -80,6 +77,14 @@ body{
     margin-top:10px;
     background: rgba(200, 200, 200, 0.1);
 }
+@media(max-width)
+{
+    .flat-head
+     {
+      font-size:3em;
+      font-weight:500;
+}
+}
 
 .font-head>#typed {
     color: var(--red-theme);
@@ -94,7 +99,6 @@ h1.background {
     position: relative;
     height: 100%;
     width: 100%;
-    background: #93291E;
 }
 
 h1.background:before {
@@ -151,7 +155,6 @@ h1.background span {
     -ms-flex-direction: row;
     flex-direction: row;
     padding: 0 10%;
-    background: #93291E;
     transform: translate(0,10px);
 }
 
