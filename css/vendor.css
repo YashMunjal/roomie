@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 @import url('https://fonts.googleapis.com/css?family=Amiri:400,700&display=swap');
 
 :root {
@@ -8,6 +10,7 @@
 * {
     font-family: 'Amiri', serif;
 }
+
 .navbar {
     font-size: 22px;
     font-weight: 150;
@@ -74,18 +77,17 @@
 .font-head {
     font-weight: 550;
     font-size: 4.5em;
-    margin-top:10px;
+    margin-top: 10px;
     background: rgba(200, 200, 200, 0.1);
 }
-@media(max-width:992px)
-{
-    .font-head
-     {
-      font-size:3em;
-      font-weight:500;
-      line-height:0.8;
-      
-}
+
+@media(max-width:992px) {
+    .font-head {
+        font-size: 3em;
+        font-weight: 500;
+        line-height: 0.8;
+
+    }
 }
 
 .font-head>#typed {
@@ -123,7 +125,7 @@ h1.background:before {
 }
 
 h1.background span {
-    background-color:white;
+    background-color: white;
     padding: 0 15px;
     font-size: 55px;
 
@@ -156,7 +158,9 @@ h1.background span {
     -ms-flex-direction: row;
     flex-direction: row;
     padding: 0 10%;
-    transform: translate(0,10px);
+    -webkit-transform: translate(0, 10px);
+        -ms-transform: translate(0, 10px);
+            transform: translate(0, 10px);
 }
 
 .box {
@@ -248,22 +252,27 @@ h1.background span {
     background-size: 100%;
     background-position: center;
 }
-footer
-{
+
+footer {
     position: relative;
-    padding:20px;
-    height:150%;
-    width:100%;
-    background-color: #000;    
+    padding: 20px;
+    height: 150%;
+    width: 100%;
+    background-color: #000;
 }
 
-.context-dark, .bg-gray-dark, .bg-primary {
+.context-dark,
+.bg-gray-dark,
+.bg-primary {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+.footer-classic a,
+.footer-classic a:focus,
+.footer-classic a:active {
     color: #ffffff;
 }
+
 .nav-list li {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -275,25 +284,35 @@ footer
     visibility: visible;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .social-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     padding: 23px;
     font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.5);
 }
+
 .social-container .col {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .nav-list li a:before {
     content: "\f14f";
     font: 400 21px/1 "Material Design Icons";
@@ -304,5 +323,57 @@ ul, ol {
     margin-right: 7px;
     opacity: 0;
     visibility: hidden;
+    -webkit-transition: .22s ease;
+    -o-transition: .22s ease;
     transition: .22s ease;
+}
+
+
+
+
+
+
+/*==============================================Search Page==============================================================*/
+.sort-sidebar {
+    width: 30vw;
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    position: fixed;
+    overflow-x: hidden;
+    background: #000;
+    padding: 10px 0;
+}
+
+.sort-sidebar ul {
+    list-style: none;
+}
+
+.sort-sidebar li {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+}
+
+.main-search-page {
+    top: 100px;
+    height: auto;
+    min-height: 500px;
+}
+
+.main-search {
+    width: 65vw;
+    height: 80vh;
+    right: 0;
+    position: absolute;
+    background-color: #2196F3;
+}
+.search-btns
+{
+        position: absolute;
+        z-index:  3;;
+        right:10%;
+        top:100px;
 }
