@@ -8,6 +8,9 @@
 * {
     font-family: 'Amiri', serif;
 }
+body{
+    background-color:#93291E;
+}
 .navbar {
     font-size: 22px;
     font-weight: 150;
