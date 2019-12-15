@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+        integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link href="css/vendor.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>FinnRooms</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#"><img src="images/logo.jpeg" style="transform:translate(0,-20px);"
+                class="nav-logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center order-2" id="navbarSupportedContent">
+            <ul class="navbar-nav ">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQs</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!----Profile-->
+    <div class="container bootstrap snippet">
+
+        <div class="row">
+            <div class="col-sm-3">
+                <!--left col-->
+
+
+                <div class="text-center">
+                    <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail"
+                        alt="avatar">
+
+                    <input type="file" class="text-center center-block file-upload">
+                </div>
+                </hr><br>
+
+
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">Activity <i class="fa fa-dashboard fa-1x"></i></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Places
+                                Searched</strong></span> 125</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Places
+                                Uploaded</strong></span> 13</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Places Rated</strong></span>
+                        37</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Orders done</strong></span>
+                        78</li>
+                </ul>
+
+
+
+            </div>
+            <!--/col-3-->
+            <div class="col-sm-9">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home" class="main-profile">Home</a></li>
+                    <li><a data-toggle="tab" class="main-edit-profile">Edit</a>
+                    </li>
+                </ul>
+
+
+                <div class="tab-pane" id="home">
+                    <hr>
+                    <form class="form" action="##" method="post" id="registrationForm">
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="first_name">
+                                    <h4>First name</h4>
+                                </label>
+                                <input type="text" class="form-control" name="first_name" id="first_name"
+                                    placeholder="first name" title="enter your first name if any.">
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="last_name">
+                                    <h4>Last name</h4>
+                                </label>
+                                <input type="text" class="form-control" name="last_name" id="last_name"
+                                    placeholder="last name" title="enter your last name if any.">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="phone">
+                                    <h4>Phone</h4>
+                                </label>
+                                <input type="text" class="form-control" name="phone" id="phone"
+                                    placeholder="enter phone" title="enter your phone number if any.">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-6">
+                                <label for="mobile">
+                                    <h4>Mobile</h4>
+                                </label>
+                                <input type="text" class="form-control" name="mobile" id="mobile"
+                                    placeholder="enter mobile number" title="enter your mobile number if any.">
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="email">
+                                    <h4>Email</h4>
+                                </label>
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="you@email.com" title="enter your email.">
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="email">
+                                    <h4>Location</h4>
+                                </label>
+                                <input type="email" class="form-control" id="location" placeholder="somewhere"
+                                    title="enter a location">
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="password">
+                                    <h4>Password</h4>
+                                </label>
+                                <input type="password" class="form-control" name="password" id="password"
+                                    placeholder="password" title="enter your password.">
+                            </div>
+                        </div>
+                        <div class="form-group save-btn-group">
+
+                            <div class="col-xs-6">
+                                <label for="password2">
+                                    <h4>Verify</h4>
+                                </label>
+                                <input type="password" class="form-control" name="password2" id="password2"
+                                    placeholder="password2" title="enter your password2.">
+                            </div>
+                        </div>
+                        <div class="form-group save-btn-group">
+                            <div class="col-xs-12">
+                                <br>
+                                <button class="btn btn-lg btn-success" type="submit"><i
+                                        class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i>
+                                    Reset</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <!--/tab-pane-->
+
+
+            </div>
+            <!--/tab-pane-->
+        </div>
+        <!--/tab-content-->
+
+    </div>
+    <!--/col-9-->
+    </div>
+    <!--/row-->
+
+
+    <!----Profile Ends-->
+    <footer class="section footer-classic context-dark bg-image" data-aos="fade-left">
+        <div class="container">
+            <div class="row row-30">
+                <div class="col-md-4 col-xl-5">
+                    <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light"
+                                src="images/logo.jpeg" alt="" width="140" height="37"></a>
+                        <br><br>
+                        <!-- Rights-->
+                        <p class="rights"><span>©  </span><span
+                                class="copyright-year">2019</span><span> </span><span>FinnRooms</span><span>. </span><span>All
+                                Rights Reserved.</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacts</h5>
+                    <dl class="contact-list">
+                        <dt>Address:</dt>
+                        <dd>Chandigarh</dd>
+                    </dl>
+                    <dl class="contact-list">
+                        <dt>email:</dt>
+                        <dd><a href="mailto:#">mail</a></dd>
+                    </dl>
+                </div>
+                <div class="col-md-4 col-xl-3">
+                    <h5></h5>
+                    <ul class="nav-list">
+                        <li><a href="#">RoomFinder</a></li>
+                        <li><a href="#">Laundry</a></li>
+                        <li><a href="#">Dining</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters social-container">
+            <div class="col"><a class="social-inner" href="#"><span
+                        class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+            <div class="col"><a class="social-inner" href="#"><span
+                        class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+            <div class="col"><a class="social-inner" href="#"><span
+                        class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+            <div class="col"><a class="social-inner" href="#"><span
+                        class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+        </div>
+    </footer>
+    <!-- ./Footer -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('input').attr('disabled','disabled');
+            $('.save-btn-group').hide();
+            $('.main-profile').click(function(){
+                $('input').attr('disabled','disabled');
+                $('.save-btn-group').hide();
+            });
+           $('.main-edit-profile').click(function(){
+               $('input').removeAttr('disabled');
+               $('.save-btn-group').show();
+           });
+        });
+    </script>
+
+</body>
+
+</html>
