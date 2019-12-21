@@ -31,7 +31,7 @@
                     <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">FAQs</a>
@@ -39,84 +39,98 @@
             </ul>
         </div>
     </nav>
-    <div class="hero-section">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12 text-center" data-aos="fade-in">
-                    <h1 class="font-head">Find the best <br class="break-typed"><span id="typed"></span></h1>
+    <!------Main Content------------->
 
-                    <p class="lead">
-                        <form action="search-page.html" method="post" novalidate="novalidate">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                            <input type="text" class="form-control search-slt"
-                                                placeholder="What would you like to find?">
-                                        </div>
-                                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                            <input type="text" class="form-control search-slt" placeholder="City">
-                                        </div>
-                                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                            <select class="form-control search-slt" id="exampleFormControlSelect1">
-                                                <option>Category</option>
-                                                <option>Rooms</option>
-                                                <option>Laundry</option>
-                                                <option>Eat</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                            <button type="submit" class="btn black-btn">Lets Go!</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </p>
-                </div>
-            </div>
+        
+<div class="container" style="position:absoulte;margin-top:100px;">
+
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-5 mb-3">Contact us
+      </h1>
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Contact</li>
+      </ol>
+
+      <!-- Content Row -->
+      <div class="row">
+        <!-- Map Column -->
+        <div class="col-lg-8 mb-4">
+          <!-- Embedded Google Map -->
+          <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2175.7774247285747!2d76.66094507446445!3d30.514082768210717!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fc33ce4e17feb%3A0xb1331ae418c98a17!2sMarco&#39;s+Food+Mess!5e0!3m2!1sen!2sin!4v1549225414720" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-    </div>
-    <div class="section-two">
-
-        <h1 class="background"><span>The FinnRoom Arena</span></h1>
-        <div class="wrap">
-
-            <div class="box one" data-aos="fade-in">
-                <h1>Rooms</h1>
-            </div>
-            <div class="box two" data-aos="fade-in">
-                <div class="date">
-                </div>
-                <H1>Dinings</H1>
-            </div>
-            <div class="box three" data-aos="fade-right">
-                <h1>Laundry</h1>
-            </div>
-            <div class="box four" data-aos="fade-right">
-                <h1>Easy To Find</h1>
-            </div>
-            <div class="box five" data-aos="Zoom-in">
-                <h1>All at One Place</h1>
-            </div>
-            <div class="box six" data-aos="Zoom-in">
-                <h1>Agreements 100% Solved</h1>
-            </div>
-            <div class="box seven" data-aos="Zoom-in">
-                <h1>Commom Room Facility</h1>
-            </div>
-            <div class="box eight" data-aos="fade-right">
-                <h1>Contact us</h1>
-            </div>
+        <!-- Contact Details Column -->
+        <div class="col-lg-4 mb-4">
+          <h3>Contact Details</h3>
+          <p>
+           CCET
+            <br>Chandigarh
+            <br>
+          </p>
+          <p>
+            <abbr title="Phone">P</abbr>: <a href="tel:">+91 99999999999</a>
+          </p>
+          <p>
+            <abbr title="Email">E</abbr>:
+            <a href="mailto:name@example.com">   name@example.com   </a>
+          </p>
+          <p>
+            <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 4:20 PM
+          </p>
         </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mb-4">
+          <h3>Send us a Message</h3>
+          <form name="sentMessage" id="contactForm" novalidate>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Full Name:</label>
+                <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                <p class="help-block"></p>
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Phone Number:</label>
+                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Email Address:</label>
+                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Message:</label>
+                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+              </div>
+            </div>
+            <div id="success"></div>
+            <!-- For success/fail messages -->
+            <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
     </div>
-    <!-- Footer -->
+    </div>
+
+
+    <!-------Main ends---------------->
     
     <footer class="section footer-classic context-dark bg-image" data-aos="fade-left">
             <div class="container">
               <div class="row row-30">
                 <div class="col-md-4 col-xl-5">
-                  <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/logo.jpeg" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                  <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/logo.jpeg" alt="" width="140" height="37"></a>
                         <br><br>
                     <!-- Rights-->
                     <p class="rights"><span>©  </span><span class="copyright-year">2019</span><span> </span><span>FinnRooms</span><span>. </span><span>All Rights Reserved.</span></p>
@@ -164,18 +178,6 @@
         integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous">
     </script>
     <script src="js/main.js"></script>
-    <script>
-    var typed = new Typed('#typed',{
-        strings:['Rooms','Laundry','Dining'],
-        typeSpeed:140,
-        backSpeed: 110,
-        backDelay:700,
-        loop: true,
-         loopCount: Infinity
-    })
-    
-        </script>
-    
 </body>
 
 </html>
