@@ -48,4 +48,9 @@ $(document).ready(function () {
     $('.flat-block').hide();
     $('.independent-block').show();
   });
+  
+
+  //prop-uploads
+  
+  
 });
