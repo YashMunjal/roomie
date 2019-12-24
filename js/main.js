@@ -51,6 +51,43 @@ $(document).ready(function () {
   
 
   //prop-uploads
-  
-  
+  var fields= new Array('.basic','.owner','.pricing-upload','.amenities');
+
+
+  $('.next-to-owner').click(function(){
+    $('.progress-bar').css("width","25%");
+    $(fields[0]).hide();
+    $(fields[1]).show();
+  });
+  $('.next-to-pricing').click(function(){
+    $('.progress-bar').css("width","50%");
+    $(fields[1]).hide();
+    $(fields[2]).show();
+  });
+  $('.next-to-amenities').click(function(){
+    $('.progress-bar').css("width","75%");
+    $(fields[2]).hide();
+    $(fields[3]).show();
+  });
+  $('.prev-to-pricing').click(function(){
+    $('.progress-bar').css("width","50%");
+    $(fields[3]).hide();
+    $(fields[2]).show();
+  });
+  $('.prev-to-owner').click(function(){
+    $('.progress-bar').css("width","25%");
+    $(fields[2]).hide();
+    $(fields[1]).show();
+  });
+  $('.prev-to-basic').click(function(){
+    $('.progress-bar').css("width","0%");
+    $(fields[1]).hide();
+    $(fields[0]).show();
+  });
+  $('#final-submit').click(function(){
+    $('.progress-bar').css("width","100%");
+    $(fields[3]).css("opacity","0");
+  });
+
 });
+

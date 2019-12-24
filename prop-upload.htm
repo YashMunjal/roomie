@@ -8,9 +8,11 @@
     integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
   <link href="css/vendor.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
-  <link rel="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
   <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+  <link href="https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.min.js"></script>
   <title>FinnRooms</title>
 </head>
 
@@ -76,7 +78,7 @@
                   placeholder="Property Area" /><label class="fieldlabels">Neighbourhood Details</label> <input
                   type="text" name="prop-neighbour" placeholder="Neighbourhood Details" /><label
                   class="fieldlabels">Upload Property Photo</label> <input type="file" name="prop-pic" accept="image/">
-              </div> <input type="button" name="next" class="next action-button" value="Next" />
+              </div> <input type="button" name="next" class="next action-button next-to-owner" value="Next" />
             </fieldset>
             <fieldset class="owner">
               <div class="form-card">
@@ -93,8 +95,8 @@
                   No.: *</label> <input type="text" name="phno_2" placeholder="Alternate Contact No." /><label
                   class="fieldlabels">Upload Document Proof (Aadhaar/Voter ID/Passport)</label> <input type="file"
                   name="proof-pic" accept="image/*">
-              </div> <input type="button" name="next" class="next action-button" value="Next" /> <input type="button"
-                name="previous" class="previous action-button-previous" value="Previous" />
+              </div> <input type="button" name="next" class="next action-button next-to-pricing" value="Next" /> <input type="button"
+                name="previous" class="previous action-button-previous prev-to-basic" value="Previous" />
             </fieldset>
             <fieldset class="pricing-upload">
               <div class="form-card">
@@ -115,14 +117,14 @@
                   </label></div>
                 <label class="fieldlabels">Extra Charges expected(leave blank if no charges)</label> <input type="text"
                   name="prop-extra-charges" placeholder="Extra chargin details here" />
-              </div> <input type="button" name="next" class="next action-button" value="Submit" /> <input type="button"
-                name="previous" class="previous action-button-previous" value="Previous" />
+              </div> <input type="button" name="next" class="next action-button next-to-amenities" value="Submit" /> <input type="button"
+                name="previous" class="previous action-button-previous prev-to-owner" value="Previous" />
             </fieldset>
             <fieldset class="amenities">
               <div class="form-card">
                 <div class="row">
                   <div class="col-7">
-                    <h2 class="fs-title">Pricing</h2>
+                    <h2 class="fs-title">Amenities</h2>
                   </div>
                   <div class="col-5">
                     <h2 class="steps">3/4</h2>
@@ -188,8 +190,8 @@
                 </div>
 
                 <!----Amenities ka sir dard----->
-              </div> <input type="button" name="next" class="next action-button" value="Submit" /> <input type="button"
-                name="previous" class="previous action-button-previous" value="Previous" />
+              </div> <input type="button" name="next" class="next action-button" id="final-submit" value="Submit" /> <input type="button"
+                name="previous" class="previous action-button-previous prev-to-pricing" value="Previous" />
             </fieldset>
           </form>
         </div>
@@ -200,7 +202,7 @@
 
   <!-------Main ends---------------->
 
-  <footer class="section footer-classic context-dark bg-image" data-aos="fade-left">
+  <footer class="section footer-classic context-dark bg-image">
     <div class="container">
       <div class="row row-30">
         <div class="col-md-4 col-xl-5">
@@ -261,6 +263,12 @@
 
   <script src="js/main.js">
   </script>
+  <script>
+    document.getElementById('final-submit').onclick = function(){
+  swal("Thanks", "Your data has been saved!", "success");
+};
+  </script>
+
 </body>
 
 </html>

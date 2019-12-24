@@ -659,6 +659,7 @@ ul {
 
 .progress-bar {
     background-color: var(--red-theme);
+    width:0;
 }
 
 .fit-image {
