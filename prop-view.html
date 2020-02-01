@@ -2,99 +2,659 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
-        integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <link href="css/vendor.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
-    <link rel="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
-    <title>FinnRooms</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+    integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link href="css/vendor.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+  <link rel="stylesheet" href="css/prop-view.css">
+  <title>FinnRooms</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#"><img src="images/logo.jpeg" class="nav-logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#"><img src="images/logo.jpeg" class="nav-logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse justify-content-center order-2" id="navbarSupportedContent">
-            <ul class="navbar-nav ">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">FAQs</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!------Main Content------------->
-    
-    <!-------Main ends---------------->
-    
-    <footer class="section footer-classic context-dark bg-image" data-aos="fade-left">
-            <div class="container">
-              <div class="row row-30">
-                <div class="col-md-4 col-xl-5">
-                  <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/logo.jpeg" alt="" width="140" height="37"></a>
-                        <br><br>
-                    <!-- Rights-->
-                    <p class="rights"><span>©  </span><span class="copyright-year">2019</span><span> </span><span>FinnRooms</span><span>. </span><span>All Rights Reserved.</span></p>
+    <div class="collapse navbar-collapse justify-content-center order-2" id="navbarSupportedContent">
+      <ul class="navbar-nav ">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">FAQs</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!------Main Content------------->
+
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"
+      type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <title>Property view</title>
+  </head>
+
+  <body>
+
+    <div class="theme-hero-area">
+      <div class="theme-hero-area-bg-wrap">
+        <div class="theme-hero-area-bg" style="background-image:url(img/daak8aqd_-i_1500x500.jpeg);"></div>
+        <div class="theme-hero-area-mask theme-hero-area-mask-half"></div>
+      </div>
+      <div class="theme-hero-area-body">
+        <div class="container">
+          <div class="theme-item-page-header _pt-100 _pb-30 theme-item-page-header-white">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="theme-item-page-header-body">
+                  <div class="theme-item-page-header-rating">
+                    <ul class="theme-item-page-header-rating-stars">
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                    <p class="theme-item-page-header-rating-title">8 reviews</p>
                   </div>
-                </div>
-                <div class="col-md-4">
-                  <h5>Contacts</h5>
-                  <dl class="contact-list">
-                    <dt>Address:</dt>
-                    <dd>Chandigarh</dd>
-                  </dl>
-                  <dl class="contact-list">
-                    <dt>email:</dt>
-                    <dd><a href="mailto:#">mail</a></dd>
-                  </dl>
-                </div>
-                <div class="col-md-4 col-xl-3">
-                  <h5></h5>
-                  <ul class="nav-list">
-                    <li><a href="#">RoomFinder</a></li>
-                    <li><a href="#">Laundry</a></li>
-                    <li><a href="#">Dining</a></li>
-                    <li><a href="#">Contact us</a></li>
+                  <h1 class="theme-item-page-header-title _ff-d _fw-200">1BHK flat/ sec-22</h1>
+                  <div class="theme-item-page-header-price theme-item-page-header-price-lg">
+                    <p class="theme-item-page-header-price-body">
+                      <b>20,000</b>
+                      <span>/month</span>
+                    </p>
+                  </div>
+                  <ul class="theme-breadcrumbs _mt-20">
+                    <li>
+                      <p class="theme-breadcrumbs-item-title">
+                        <a href="index.html">Home</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p class="theme-breadcrumbs-item-title">
+                        <a href="#">chandigarh</a>
+                      </p>
+                      <p class="theme-breadcrumbs-item-subtitle">15,878 homes</p>
+                    </li>
+                    <li>
+                      <p class="theme-breadcrumbs-item-title">
+                        <a href="#">sec-22</a>
+                      </p>
+                      <p class="theme-breadcrumbs-item-subtitle">1534 homes</p>
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="row no-gutters social-container">
-              <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
-              <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
-              <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
-              <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
-            </div>
-          </footer>
-    <!-- ./Footer -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="theme-page-section theme-page-section-dark theme-page-section-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="row row-col-static" id="sticky-parent">
+              <div class="col-md-8 ">
+                <div
+                  class="theme-search-area _p-20 _bg-p _mb-30 _desk-h theme-search-area-white theme-search-area-vert">
+                  <div class="theme-search-area-header _mb-20 theme-search-area-header-sm">
+                    <h1 class="theme-search-area-title">Book Property</h1>
+                    <p class="theme-search-area-subtitle">Urna ornare felis hendrerit sociosqu</p>
+                  </div>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
-        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous">
-    </script>
-    <script src="js/main.js"></script>
+                  <p class="theme-item-page-summary-price-total">Cost Around
+                    <span>10K-12K</span>
+                  </p>
+                </div>
+                <button class="theme-search-area-submit _mt-0 _tt-uc theme-search-area-submit-curved">Book an
+                  appointment</button>
+              </div>
+            </div>
+            <div class="theme-item-page-tabs">
+              <div class="tabbable">
+                <ul class="nav nav-tabs nav-white nav-no-br nav-sqr nav-mob-inline" role="tablist">
+                  <li class="active" role="presentation">
+                    <a class="_ph-20" aria-controls="HotelPageTabs-1" role="tab" data-toggle="tab"
+                      href="#HotelPageTabs-1">Overview</a>
+                  </li>
+                  <li role="presentation">
+                    <a class="_ph-20" aria-controls="HotelPageTabs-2" role="tab" data-toggle="tab"
+                      href="#HotelPageTabs-2">Details</a>
+                  </li>
+                  <li role="presentation">
+                    <a class="_ph-20" aria-controls="HotelPageTabs-3" role="tab" data-toggle="tab"
+                      href="#HotelPageTabs-3">Map</a>
+                  </li>
+                  <li role="presentation">
+                    <a class="_ph-20" aria-controls="HotelPageTabs-4" role="tab" data-toggle="tab"
+                      href="#HotelPageTabs-4">Reviews</a>
+                  </li>
+                </ul>
+                <div class="tab-content _p-20 _bg-w">
+                  <div class="tab-pane active" id="HotelPageTabs-1" role="tab-panel">
+                    <div class="theme-item-page-overview">
+                      <div class="fotorama _mb-20" data-nav="thumbs" data-minwidth="100%" data-arrows="always"
+                        data-allowfullscreen="native">
+                        <img src="img/room-page/slider/4.jpg" alt="Image Alternative text" title="Image Title" />
+                        <img src="img/room-page/slider/1.jpg" alt="Image Alternative text" title="Image Title" />
+                        <img src="img/room-page/slider/3.jpg" alt="Image Alternative text" title="Image Title" />
+                        <img src="img/room-page/slider/5.jpg" alt="Image Alternative text" title="Image Title" />
+                        <img src="img/room-page/slider/6.jpg" alt="Image Alternative text" title="Image Title" />
+                        <img src="img/room-page/slider/7.jpg" alt="Image Alternative text" title="Image Title" />
+                        <img src="img/room-page/slider/2.jpg" alt="Image Alternative text" title="Image Title" />
+                        <img src="img/room-page/slider/4.jpg" alt="Image Alternative text" title="Image Title" />
+                        <img src="img/room-page/slider/1.jpg" alt="Image Alternative text" title="Image Title" />
+                        <img src="img/room-page/slider/3.jpg" alt="Image Alternative text" title="Image Title" />
+                        <img src="img/room-page/slider/5.jpg" alt="Image Alternative text" title="Image Title" />
+                        <img src="img/room-page/slider/6.jpg" alt="Image Alternative text" title="Image Title" />
+                      </div>
+                      <div class="theme-item-page-desc">
+                        <p>This Manhattan hotel is located across the street from Madison Square Garden and Penn
+                          Station. The hotel offers access to the adjacent fitness club which includes a gym and a tour
+                          desk with ticket services.</p>
+                        <p>Each air-conditioned room at the Hotel Pennsylvania provides cable TV. Guests also have
+                          access to a work desk, alarm clock, black-out drapes, iron and hairdryer in every room.</p>
+                        <p>The Pennsylvania Hotel includes a 24-hour coffee shop and a restaurant. Guests can make
+                          transportation reservations and acquire theater tickets at the hotel. Guests will also have
+                          access to a safety deposit desk at the front desk, any time of the day.</p>
+                        <p>Times Square and the Museum of Modern Art are less than a 15-minute walk from Hotel Penn.
+                          Guests are also one block from Macy's and 2 blocks from the Empire State Building.</p>
+                        <p>This is our guests' favourite part of New York, according to independent reviews. This area
+                          is also great for shopping, with popular brands nearby: H&M, Nike, Ralph Lauren.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="HotelPageTabs-2" role="tab-panel">
+                    <div class="theme-item-page-details theme-item-page-details-first-nm">
+                      <div class="theme-item-page-details-section">
+                        <h5 class="theme-item-page-details-section-title">The Space</h5>
+                        <div class="row">
+                          <div class="col-md-6 ">
+                            <ul class="theme-item-page-details-list">
+                              <li>Accommodates: 2</li>
+                              <li>Bathrooms: 2</li>
+                              <li>Bed type: Real Bed</li>
+                              <li>Bedrooms: 2</li>
+                              <li>Beds: 2</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-6 ">
+                            <ul class="theme-item-page-details-list">
+                              <li>Check In: 9AM - 9PM</li>
+                              <li>Property type: Apartment</li>
+                              <li>Room type: Entire home</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="theme-item-page-details-section">
+                        <h5 class="theme-item-page-details-section-title">Amenities</h5>
+                        <div class="row">
+                          <div class="col-md-4 ">
+                            <ul class="theme-item-page-details-list theme-item-page-details-list-checked">
+                              <li>Essentials</li>
+                              <li>Buzzer/wireless intercom</li>
+                              <li>Cable TV</li>
+                              <li>Wifi</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4 ">
+                            <ul class="theme-item-page-details-list theme-item-page-details-list-checked">
+                              <li>Washer</li>
+                              <li>Shampoo</li>
+                              <li>Heating</li>
+                              <li>Laptop friendly workspace</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4 ">
+                            <ul class="theme-item-page-details-list theme-item-page-details-list-checked">
+                              <li>Elevator</li>
+                              <li>Internet</li>
+                              <li>Kitchen</li>
+                              <li>Iron</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="theme-item-page-details-section">
+                        <h5 class="theme-item-page-details-section-title">House Rules</h5>
+                        <ul class="theme-item-page-details-list _mb-20">
+                          <li>No Smoking</li>
+                          <li>Not suitable for pets</li>
+                          <li>No parties or events</li>
+                          <li>Check in time is 9AM - 9PM</li>
+                        </ul>
+                        <p class="theme-item-page-details-text">I am hoping for responsible, honest and respectful
+                          guests that treat my place as if it was their own.</p>
+                        <p class="theme-item-page-details-text">The apartment is in a very quite and clean building, so
+                          i'll ask my guest to respect the tranquility of the neighbors (as you would do at your own
+                          place). It's a non-smoking place but it's ok to smoke on the balcony.</p>
+                        <p class="theme-item-page-details-text">Please make sure to read all the informations
+                          (especially the access from the 6th to the 7th floor). Be aware that it's my home and not only
+                          a rental apartment (don't expect a IKEA type apartment :) ). It's an old building so even if
+                          there is a good heating it can be a bit fresh in winter and hot in summer!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="HotelPageTabs-3" role="tab-panel">
+                    <div class="theme-item-page-map google-map" data-lat="40.7483624" data-lng="-73.9900896"></div>
+                  </div>
+                  <div class="tab-pane" id="HotelPageTabs-4" role="tab-panel">
+                    <div class="theme-reviews">
+                      <div class="theme-reviews-list">
+                        <article class="theme-reviews-item">
+                          <div class="row" data-gutter="10">
+                            <div class="col-md-3 ">
+                              <div class="theme-reviews-item-info">
+                                <img class="theme-reviews-item-avatar"
+                                  src="img/stella_grutzmann_premier_models_management_70x70.jpg"
+                                  alt="Image Alternative text" title="Image Title" />
+                                <p class="theme-reviews-item-date">Reviewed Wed, Jun 20</p>
+                                <p class="theme-reviews-item-author">by Brandon Burgess</p>
+                              </div>
+                            </div>
+                            <div class="col-md-9 ">
+                              <div class="theme-reviews-rating">
+                                <ul class="theme-reviews-rating-stars">
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star-o"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star-o"></i>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="theme-reviews-item-body">
+                                <p class="theme-reviews-item-text">Eleifend ornare tempor sem quisque dolor nascetur
+                                  pharetra eu ipsum urna ridiculus est elementum laoreet amet donec aptent rhoncus
+                                  aliquet eget venenatis scelerisque ante maecenas ultricies potenti nascetur sodales
+                                  cum orci bibendum sapien mauris</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        <article class="theme-reviews-item">
+                          <div class="row" data-gutter="10">
+                            <div class="col-md-3 ">
+                              <div class="theme-reviews-item-info">
+                                <img class="theme-reviews-item-avatar" src="img/amaze_70x70.jpg"
+                                  alt="Image Alternative text" title="Image Title" />
+                                <p class="theme-reviews-item-date">Reviewed Wed, Jun 13</p>
+                                <p class="theme-reviews-item-author">by Joe Smith</p>
+                              </div>
+                            </div>
+                            <div class="col-md-9 ">
+                              <div class="theme-reviews-rating">
+                                <ul class="theme-reviews-rating-stars">
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star-o"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star-o"></i>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="theme-reviews-item-body">
+                                <p class="theme-reviews-item-text">Id est vivamus egestas ipsum nulla fames donec
+                                  cubilia dolor rhoncus taciti pellentesque a tellus mollis dapibus pellentesque
+                                  placerat neque tempor tempus dolor curabitur sodales suspendisse penatibus ridiculus
+                                  felis duis dictumst porta maecenas cursus ultricies tristique sagittis eleifend
+                                  consectetur ut laoreet tempus scelerisque commodo tincidunt pharetra odio arcu</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        <article class="theme-reviews-item">
+                          <div class="row" data-gutter="10">
+                            <div class="col-md-3 ">
+                              <div class="theme-reviews-item-info">
+                                <img class="theme-reviews-item-avatar"
+                                  src="img/adolescent-beanie-casual-cold-295821_70x70.jpeg" alt="Image Alternative text"
+                                  title="Image Title" />
+                                <p class="theme-reviews-item-date">Reviewed Sat, Jun 09</p>
+                                <p class="theme-reviews-item-author">by Elizabeth Wallace</p>
+                              </div>
+                            </div>
+                            <div class="col-md-9 ">
+                              <div class="theme-reviews-rating">
+                                <ul class="theme-reviews-rating-stars">
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="theme-reviews-item-body">
+                                <p class="theme-reviews-item-text">Sit adipiscing enim accumsan pretium pulvinar diam
+                                  parturient orci vestibulum tincidunt quis tristique feugiat orci porttitor lacus mi
+                                  iaculis at nibh potenti inceptos</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        <article class="theme-reviews-item">
+                          <div class="row" data-gutter="10">
+                            <div class="col-md-3 ">
+                              <div class="theme-reviews-item-info">
+                                <img class="theme-reviews-item-avatar" src="img/chiara_70x70.jpg"
+                                  alt="Image Alternative text" title="Image Title" />
+                                <p class="theme-reviews-item-date">Reviewed Sat, Jun 02</p>
+                                <p class="theme-reviews-item-author">by Leah Kerr</p>
+                              </div>
+                            </div>
+                            <div class="col-md-9 ">
+                              <div class="theme-reviews-rating">
+                                <ul class="theme-reviews-rating-stars">
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star-o"></i>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="theme-reviews-item-body">
+                                <p class="theme-reviews-item-text">Ultricies sem nascetur netus non torquent bibendum
+                                  lacus lorem neque vivamus sapien eros dictum quis ullamcorper et lorem litora porta
+                                  sociosqu pretium</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        <article class="theme-reviews-item">
+                          <div class="row" data-gutter="10">
+                            <div class="col-md-3 ">
+                              <div class="theme-reviews-item-info">
+                                <img class="theme-reviews-item-avatar" src="img/me_with_the_uke_70x70.jpg"
+                                  alt="Image Alternative text" title="Image Title" />
+                                <p class="theme-reviews-item-date">Reviewed Wed, May 30</p>
+                                <p class="theme-reviews-item-author">by Bernadette Cornish</p>
+                              </div>
+                            </div>
+                            <div class="col-md-9 ">
+                              <div class="theme-reviews-rating">
+                                <ul class="theme-reviews-rating-stars">
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star-half-o"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star-o"></i>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="theme-reviews-item-body">
+                                <p class="theme-reviews-item-text">Integer purus platea imperdiet litora libero ut
+                                  rhoncus sit iaculis curabitur odio facilisi conubia lacinia ac hac in luctus mattis
+                                  orci lacinia conubia netus duis lobortis bibendum pulvinar dapibus amet maecenas nec
+                                  sapien dictum venenatis erat nunc tortor aenean litora et dictumst</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        <div class="row">
+                          <div class="col-md-9 col-md-offset-3">
+                            <a class="theme-reviews-more" href="#">&#x2b; More Reviews</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="sticky-col">
+              <div class="theme-search-area _p-20 _bg-p _mb-10 _mob-h theme-search-area-white theme-search-area-vert">
+                <div class="theme-search-area-header _mb-20 theme-search-area-header-sm">
+                  <h1 class="theme-search-area-title">Book Property</h1>
+                  <p class="theme-search-area-subtitle">Commodo natoque faucibus metus neque</p>
+                </div>
+                <div class="theme-search-area-form">
+                  <div class="row" data-gutter="10">
+                    <div class="col-md-6 ">
+                      <div
+                        class="theme-search-area-section theme-search-area-section-sm theme-search-area-section-no-border theme-search-area-section-fade-white theme-search-area-section-curved">
+                        <div class="theme-search-area-section-inner">
+                          <i class="theme-search-area-section-icon lin lin-calendar"></i>
+                          <input class="theme-search-area-section-input datePickerStart _mob-h" value="Wed 06/27"
+                            type="text" placeholder="Check-in" />
+                          <input class="theme-search-area-section-input _desk-h mobile-picker" value="2018-06-27"
+                            type="date" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 ">
+                      <div
+                        class="theme-search-area-section theme-search-area-section-sm theme-search-area-section-no-border theme-search-area-section-fade-white theme-search-area-section-curved">
+                        <div class="theme-search-area-section-inner">
+                          <i class="theme-search-area-section-icon lin lin-calendar"></i>
+                          <input class="theme-search-area-section-input datePickerEnd _mob-h" value="Mon 07/02"
+                            type="text" placeholder="Check-out" />
+                          <input class="theme-search-area-section-input _desk-h mobile-picker" value="2018-07-02"
+                            type="date" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="theme-search-area-section theme-search-area-section-sm theme-search-area-section-no-border theme-search-area-section-fade-white theme-search-area-section-curved quantity-selector"
+                    data-increment="Guests">
+                    <div class="theme-search-area-section-inner">
+                      <i class="theme-search-area-section-icon lin lin-people"></i>
+                      <input class="theme-search-area-section-input" value="2 Guests" type="text" />
+                      <div class="quantity-selector-box" id="RoomSearchGuests">
+                        <div class="quantity-selector-inner">
+                          <p class="quantity-selector-title">Guests</p>
+                          <ul class="quantity-selector-controls">
+                            <li class="quantity-selector-decrement">
+                              <a href="#">&#45;</a>
+                            </li>
+                            <li class="quantity-selector-current">1</li>
+                            <li class="quantity-selector-increment">
+                              <a href="#">&#43;</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="theme-item-page-summary-price _mb-20 theme-item-page-summary-price-white">
+                    <a class="theme-item-page-summary-price-link" href="#summaryPriceCollapse" data-toggle="collapse"
+                      aria-expanded="false" aria-controls="summaryPriceCollapse">Show summary</a>
+                    <div class="collapse" id="summaryPriceCollapse">
+                      <ul class="theme-item-page-summary-price-list">
+                        <li class="theme-item-page-summary-price-item">
+                          <h5 class="theme-item-page-summary-price-item-title">5 nights</h5>
+                          <p class="theme-item-page-summary-price-item-subtitle">2 Guests</p>
+                          <p class="theme-item-page-summary-price-item-price">$325.00</p>
+                        </li>
+                        <li class="theme-item-page-summary-price-item">
+                          <h5 class="theme-item-page-summary-price-item-title">Clearing fee</h5>
+                          <p class="theme-item-page-summary-price-item-subtitle">One time fee</p>
+                          <p class="theme-item-page-summary-price-item-price">$54.00</p>
+                        </li>
+                        <li class="theme-item-page-summary-price-item">
+                          <h5 class="theme-item-page-summary-price-item-title">Service fee</h5>
+                          <p class="theme-item-page-summary-price-item-subtitle"></p>
+                          <p class="theme-item-page-summary-price-item-price">$85.00</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="theme-item-page-summary-price-total">Total Stay
+                      <span>$464.00</span>
+                    </p>
+                  </div>
+                  <button class="theme-search-area-submit _mt-0 _tt-uc theme-search-area-submit-curved">Book
+                    Now</button>
+                </div>
+              </div>
+              <div class="theme-sidebar-section _mb-10 _mt-mob-30">
+                <ul class="theme-sidebar-section-features-list">
+                  <li>
+                    <h5 class="theme-sidebar-section-features-list-title">Manage your bookings!</h5>
+                    <p class="theme-sidebar-section-features-list-body">You're in control of your booking - no
+                      registration required.</p>
+                  </li>
+                  <li>
+                    <h5 class="theme-sidebar-section-features-list-title">Customer support available 24/7 worldwide!
+                    </h5>
+                    <p class="theme-sidebar-section-features-list-body">Website and customer support in English and 41
+                      other languages.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+
+  </body>
+
+  </html>
+  <!-------Main ends---------------->
+
+  <footer class="section footer-classic context-dark bg-image" data-aos="fade-left">
+    <div class="container">
+      <div class="row row-30">
+        <div class="col-md-4 col-xl-5">
+          <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/logo.jpeg"
+                alt="" width="140" height="37"></a>
+            <br><br>
+            <!-- Rights-->
+            <p class="rights"><span>©  </span><span
+                class="copyright-year">2019</span><span> </span><span>FinnRooms</span><span>. </span><span>All Rights
+                Reserved.</span></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5>Contacts</h5>
+          <dl class="contact-list">
+            <dt>Address:</dt>
+            <dd>Chandigarh</dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>email:</dt>
+            <dd><a href="mailto:#">mail</a></dd>
+          </dl>
+        </div>
+        <div class="col-md-4 col-xl-3">
+          <h5></h5>
+          <ul class="nav-list">
+            <li><a href="#">RoomFinder</a></li>
+            <li><a href="#">Laundry</a></li>
+            <li><a href="#">Dining</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row no-gutters social-container">
+      <div class="col"><a class="social-inner" href="#"><span
+            class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+      <div class="col"><a class="social-inner" href="#"><span
+            class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+      <div class="col"><a class="social-inner" href="#"><span
+            class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+      <div class="col"><a class="social-inner" href="#"><span
+            class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+    </div>
+  </footer>
+  <!-- ./Footer -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+    integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous">
+  </script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
